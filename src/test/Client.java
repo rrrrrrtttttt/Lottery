@@ -13,6 +13,7 @@ public class Client {
 			OutputStream os = s1.getOutputStream();
 			DataOutputStream dos = new DataOutputStream(os);
 			
+			
 			new ClientReader(dis).start();
 			new ClientWriter(dos).start();
 		}catch(IOException e) {
