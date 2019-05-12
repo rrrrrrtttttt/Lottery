@@ -1,10 +1,26 @@
 package Test;
 
-public class test {
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.math.BigInteger;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.util.*;
 
-	public static void main(String[] args) {
+public class test {
+	public static void main(String[] args) throws UnsupportedEncodingException {
 		// TODO Auto-generated method stub
-		System.out.println("Hello World");
+		Server s = new Server();
+		/*Server_UI Server = new Server_UI();
+		Server.jtf1.setText("Server Start!");*/
+		try {
+			s.start();
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+
 	}
+	
 
 }
+
